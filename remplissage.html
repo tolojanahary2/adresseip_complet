@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>créer nu compte</title>
+    <style>
+        header{
+            font-size: 40px;
+            font-weight: 100;
+            transform-box: 1px 2px black;
+
+        }
+        body{
+            background-color:rgb(23, 27, 51);
+             padding:2px 120px; 
+             margin: 0 50px; 
+
+             color: white;
+
+        }
+
+        #creer{
+            border: 1px solid black;
+            border-radius: 12px;
+
+            width: 5cm;
+            height: 1cm;
+            margin: 2%;
+
+            text-align: center;
+            place-content: center;
+            place-items: center;
+
+            background-color: rgb(140, 241, 17);
+            animation: colorChange 7s infinite;
+
+        }
+        #creer input{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        @keyframes colorChange {
+            34%{
+                border-color: yellow;
+                color:yellow;
+            
+            }
+
+            33%{
+                border-color: green;
+                color : green;
+        
+            }
+
+            34%{
+                border-color: red;
+                color:red;
+                
+            }
+
+            
+        }
+
+        #anarana{
+            height: 0.6cm;
+            width: 7cm;
+            background-color:  rgba(0, 0, 0, 0.582) ;
+            color: white;
+
+        }
+
+        #passe{
+            height: 0.6cm;
+            width: 7cm;
+            background-color: rgba(0, 0, 0, 0.582);
+            color: white;
+
+        }
+
+        footer{
+            border: 2px solid transparent;
+            border-radius: 12px;
+
+            width: 5cm;
+            height: 1.2cm;
+            margin: 2%;
+
+            text-align: center;
+            place-content: center;
+            place-items: center;
+
+            background-color: blue;
+
+            animation: colorChange 7s infinite;
+
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<header>
+    <h>
+        MyINSCRIPTION
+    </h>
+</header><br>
+
+<body>
+    <form action="takeinformation.cgi" method="get">
+        <h>Rejoignez nous et créer votre propre compte pour que vous pourrez utiliser cette programme tous les temps</h><br>
+        <h>Alors vous devez remplir votre identité ici</h><br>
+        
+        <label>créer un d'utilisateur qui n'est pas encore utiliser dans des autre Site internet</label><br>
+        <input id="anarana" type="text" name="nom" placeholder="votre nom dans cette site" required ><br>
+        
+        <label>votre mot de passe</label><br>
+        <input id="passe" type="password" name="cle" placeholder="6 caractère au minimum" minlength="6" required><br>
+        <span>password must be at least 6 characters long and contain both letters and numbers.</span><br><br>
+        
+        <label>Les informations enregistrer ici sont valables pour l'utilisation de cette Sites et tous le temps que vous utilisez cette programme ,vos informations qui sont déjà ici sont tous acceptable,donc conservées bien votre informations sur le Login</label>
+        <input id="creer" type="submit" value="Créer un compte et enregistrer les informations">
+        <footer>
+            <a href="login.html">Quittez ou Mot de passe oublier</a>
+        </footer>
+</form>
+</body>
+</html>
